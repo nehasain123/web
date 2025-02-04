@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Hover Swap Images</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <style>
+        .swap-on-hover {
+            position: relative;
+            width: 100%;
+            max-width: 150px;
+            margin: auto;
+        }
+
+        .swap-on-hover img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: auto;
+            transition: opacity .5s linear;
+        }
+
+        .swap-on-hover .swap-on-hover__front-image {
+            z-index: 1;
+            cursor: pointer;
+            background: #626262;
+            border-radius: 50%;
+        }
+
+        .swap-on-hover:hover .swap-on-hover__front-image {
+            opacity: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container mt-5">
+    <div class="row text-center">
+        
+        <div class="col-md-2 col-6 mb-4">
+            <figure class="swap-on-hover">
+                <img class="swap-on-hover__front-image" src="./images/category-icon5.png" />
+                <img class="swap-on-hover__back-image" src="./images/category-image5.png" />
+            </figure>
+        </div>
+
+        <div class="col-md-2 col-6 mb-4">
+            <figure class="swap-on-hover">
+                <img class="swap-on-hover__front-image" src="./images/category-icon4.png" />
+                <img class="swap-on-hover__back-image" src="./images/category-image4.png" />
+            </figure>
+        </div>
+
+        <div class="col-md-2 col-6 mb-4">
+            <figure class="swap-on-hover">
+                <img class="swap-on-hover__front-image" src="./images/category-icon5.png" />
+                <img class="swap-on-hover__back-image" src="./images/category-image5.png" />
+            </figure>
+        </div>
+        <div class="col-md-2 col-6 mb-4">
+            <figure class="swap-on-hover">
+                <img class="swap-on-hover__front-image" src="./images/category-icon4.png" />
+                <img class="swap-on-hover__back-image" src="./images/category-image4.png" />
+            </figure>
+        </div>
+
+        <div class="col-md-2 col-6 mb-4">
+            <figure class="swap-on-hover">
+                <img class="swap-on-hover__front-image" src="./images/category-icon5.png" />
+                <img class="swap-on-hover__back-image" src="./images/category-image5.png" />
+            </figure>
+        </div>
+
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
